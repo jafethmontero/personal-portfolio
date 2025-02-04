@@ -7,7 +7,7 @@ export default {
         navy: "#1a1f2e",
         secondary: "#5AA9E6",
         munsell: "#55828B", // greenish
-        jasper: "#E8871E", // redish
+        jasper: "#F3C18C", // redish
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
