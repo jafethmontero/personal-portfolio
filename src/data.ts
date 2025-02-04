@@ -58,7 +58,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    name: "Tour operator website for Corcovado wild tours",
+    name: "Tour operator website",
     description: {
       en: "A website for a tour operator in Costa Rica, showcasing their tours and services.",
       es: "Un sitio web para un operador turístico en Costa Rica, mostrando sus tours y servicios.",
