@@ -60,8 +60,8 @@ export const projects: Project[] = [
   {
     name: "Tour operator website",
     description: {
-      en: "A website for a tour operator in Costa Rica, showcasing their tours and services.",
-      es: "Un sitio web para un operador turístico en Costa Rica, mostrando sus tours y servicios.",
+      en: "A website for a tour operator in Costa Rica, showcasing their tours and services. Build with Astro, React for dinamic content and Tailwind CSS for styling.",
+      es: "Un sitio web para un operador turístico en Costa Rica, mostrando sus tours y servicios. Construido con Astro, React para contenido dinámico y Tailwind CSS para estilos.",
     },
     href: "https://corcovadowildtour.com",
     imageSrc: "/images/project1.webp",
@@ -78,8 +78,8 @@ export const projects: Project[] = [
   {
     name: "React native Todo app",
     description: {
-      en: "Developed a todo app using React Native with user authentication and CRUD operations.",
-      es: "Desarrollé una aplicación de tareas pendientes utilizando React Native con autenticación de usuario y operaciones CRUD.",
+      en: "Developed a todo app using React Native with user authentication and CRUD operations using Firebase.",
+      es: "Desarrollé una aplicación de tareas pendientes utilizando React Native con autenticación de usuario y operaciones CRUD utilizando Firebase.",
     },
     href: "https://github.com/jafethmontero/TodoApp",
     imageSrc: "/images/project2.webp",
