@@ -1,0 +1,36 @@
+---
+import ExternalLinkIcon from "./icons/ExternalLink.astro";
+
+interface Props {
+  name: string;
+  description: string;
+  href: string;
+  imageSrc?: string;
+}
+
+const { imageSrc, name, description, href } = Astro.props;
+---
+
+<a
+  class="flex gap-6 border justify-start items-center w-full max-w-2xl rounded-md border-gray-700 px-4 py-4 group transition duration-300 hover:bg-gray-900 mb-4"
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label={name}
+  title={name}
+>
+  <img src={imageSrc} alt={name} class="w-36 h-28 object-cover rounded-md" />
+  <div>
+    <div class="flex items-center gap-2">
+      <h3 class="text-xl font-semibold group-hover:text-secondary">
+        {name}
+      </h3>
+      <ExternalLinkIcon
+        class="size-5 transform translate-x-0 group-hover:translate-x-2 text-white transition-all group-hover:text-secondary duration-200"
+      />
+    </div>
+    <p class="max-w-1xl mt-2 text-gray-400">
+      {description}
+    </p>
+  </div>
+</a>

@@ -1,0 +1,54 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import AsideSection from "../../components/AsideSection.astro";
+import AboutSection from "../../components/AboutSection.astro";
+import MainWrapper from "../../components/MainWrapper.astro";
+import ExperienceSection from "../../components/ExperienceSection.astro";
+import ProjectsSection from "../../components/ProjectsSection.astro";
+import Footer from "../../components/Footer.astro";
+import { experiences, projects } from "../../data";
+---
+
+<Layout title="Jafeth Montero - Front End Engineer">
+  <AsideSection
+    job="Desarrollador Web"
+    description="Creando soluciones web rápidas, accesibles y bellamente diseñadas."
+    aboutLabel="ACERCA DE MI"
+    experienceLabel="EXPERIENCIA"
+    projectsLabel="PROYECTOS"
+  />
+
+  <MainWrapper>
+    <AboutSection
+      paragraph1={`Como Desarrollador Web Frontend Senior en GEXP Software, una prestigiosa
+        empresa costarricense con sede en Pérez Zeledón, San José, impulso la
+        innovación en el ámbito de las soluciones digitales. Especializado en el
+        desarrollo de productos digitales a medida, mi labor se centra en crear
+        experiencias de usuario excepcionales mediante tecnologías de
+        vanguardia.`}
+      paragraph2={`Soy un apasionado autodidacta de la programación, enfocado en dominar JavaScript
+        y su ecosistema, incluyendo React, Redux, Node.js, Next.js, entre otras tecnologías.
+        Esta experiencia me permite conceptualizar y desarrollar soluciones digitales
+        personalizadas que no solo satisfacen las necesidades únicas de los clientes,
+        sino que también superan las expectativas de los usuarios. Me desenvuelvo con
+        soltura en equipos multidisciplinarios, donde la comunicación y la colaboración
+        son clave, aplicando metodologías Ágiles y Scrum para garantizar procesos eficientes
+        y organizados. Más allá del código y las sesiones de estudio, encuentro inspiración
+        en la naturaleza, capturando momentos a través de la fotografía, explorando nuevos
+        destinos en mis viajes y disfrutando de momentos de calidad con mi familia y
+        amigos.`}
+    />
+
+    <ExperienceSection
+      title="Experiencia"
+      lanCode="es"
+      experiences={experiences}
+    />
+
+    <ProjectsSection title="Proyectos" lanCode="es" projects={projects} />
+
+    <Footer>
+      <p>&copy; 2025 Jafeth Montero. Todos los derechos reservados.</p>
+    </Footer>
+  </MainWrapper>
+</Layout>

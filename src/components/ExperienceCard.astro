@@ -1,0 +1,58 @@
+---
+import ExternalLinkIcon from "./icons/ExternalLink.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  date: string;
+  href: string;
+  skills: string[];
+  companyName: string;
+}
+
+const { href, title, description, date, skills, companyName } = Astro.props;
+---
+
+<a
+  href={href}
+  class="flex w-full max-w-2xl rounded-md border border-gray-700 px-4 py-6 group transition duration-300 hover:bg-gray-900 mb-4"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label={title}
+  title={title}
+>
+  <header
+    class="min-w-44 mb-4 text-gray-400 transition-colors group-hover:text-gray-300 text-sm"
+  >
+    {date}
+  </header>
+
+  <div>
+    <div class="flex gap-1 items-center">
+      <h3
+        class="text-xl font-semibold text-white transition-colors group-hover:text-secondary duration-200"
+      >
+        {title}
+      </h3>
+      <ExternalLinkIcon
+        class="size-5 transform translate-x-0 group-hover:translate-x-2 text-white transition-all group-hover:text-secondary duration-200"
+      />
+    </div>
+
+    <span class="text-sm text-gray-300">{companyName}</span>
+
+    <p class="text-gray-400 max-w-2xl my-2">
+      {description}
+    </p>
+
+    <div class="flex flex-wrap gap-2 mt-4">
+      {
+        skills.map((skill) => (
+          <span class="px-3 py-1 bg-gray-700 bg-opacity-50 text-secondary rounded-full text-sm">
+            {skill}
+          </span>
+        ))
+      }
+    </div>
+  </div>
+</a>

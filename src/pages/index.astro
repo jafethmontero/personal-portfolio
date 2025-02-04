@@ -1,0 +1,52 @@
+---
+import AsideSection from "../components/AsideSection.astro";
+import AboutSection from "../components/AboutSection.astro";
+import MainWrapper from "../components/MainWrapper.astro";
+import ExperienceSection from "../components/ExperienceSection.astro";
+import ProjectsSection from "../components/ProjectsSection.astro";
+import Footer from "../components/Footer.astro";
+import { experiences, projects } from "../data";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Jafeth Montero - Front End Engineer">
+  <AsideSection
+    job="Frontend Web Developer"
+    description="Creating fast, accessible, and beautifully designed web solutions."
+    aboutLabel="ABOUT ME"
+    experienceLabel="EXPERIENCE"
+    projectsLabel="PROJECTS"
+  />
+
+  <MainWrapper>
+    <AboutSection
+      paragraph1={`As a Sr. Frontend Web Developer at gexp software, an esteemed Costa
+        Rican enterprise based in Perez Zeledon, San Jose, I steer innovation in
+        the realm of digital solutions. With a specialization in tailored
+        digital products, my role revolves around shaping exceptional user
+        experiences through cutting-edge technologies.`}
+      paragraph2={`I am a passionate self-taught programming enthusiast who focuses on
+        mastering JavaScript and its ecosystem, including React, Redux, Node.js,
+        Next.js, and more. This proficiency empowers me to conceptualize and
+        deliver custom digital solutions that meet clients' unique requirements
+        and exceed user expectations. I thrive in cross- functional teams, where
+        I communicate and collaborate effectively using Agile and Scrum
+        methodologies. Beyond lines of code and study sessions, I find solace in
+        nature's embrace, capturing moments through the lens, exploring new
+        places through travel, and spending quality time with my beloved family
+        and friends.`}
+    />
+
+    <ExperienceSection
+      title="Experience"
+      lanCode="en"
+      experiences={experiences}
+    />
+
+    <ProjectsSection title="Projects" lanCode="en" projects={projects} />
+
+    <Footer>
+      <p>&copy; 2025 Jafeth Montero. All rights reserved.</p>
+    </Footer>
+  </MainWrapper>
+</Layout>

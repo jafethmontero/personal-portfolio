@@ -1,0 +1,21 @@
+---
+import ProjectCard from "./ProjectCard.astro";
+import type { Project } from "../data";
+
+const { projects, lanCode, title } = Astro.props;
+
+interface Props {
+  projects: Project[];
+  title: string;
+  lanCode: string;
+}
+---
+
+<section id="projects" class="mb-16">
+  <h2 class="text-2xl font-bold mb-4 text-jasper/80">{title}</h2>
+  {
+    projects.map((project) => (
+      <ProjectCard {...project} description={project.description[lanCode]} />
+    ))
+  }
+</section>

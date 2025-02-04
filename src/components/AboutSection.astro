@@ -1,0 +1,17 @@
+---
+const { paragraph1, paragraph2 } = Astro.props;
+
+interface Props {
+  paragraph1: string;
+  paragraph2: string;
+}
+---
+
+<section id="about" class="mb-16 text-gray-400">
+  <p class="max-w-2xl mb-4">
+    {paragraph1}
+  </p>
+  <p class="max-w-2xl">
+    {paragraph2}
+  </p>
+</section>

@@ -1,0 +1,34 @@
+---
+const { aboutLabel, experienceLabel, projectsLabel } = Astro.props;
+
+interface Props {
+  aboutLabel: string;
+  experienceLabel: string;
+  projectsLabel: string;
+}
+---
+
+<nav class="hidden mb-16 md:block"></nav>
+<ul class="hidden md:space-y-6 text-white md:flex md:flex-col">
+  <li class="transform duration-200 transition-all hover:translate-x-4">
+    <a href="#about" class="hover:text-jasper" aria-label="About" title="About"
+      >{aboutLabel}</a
+    >
+  </li>
+  <li class="transform duration-200 transition-all hover:translate-x-4">
+    <a
+      href="#experience"
+      class="hover:text-jasper"
+      aria-label="Experience"
+      title="Experience">{experienceLabel}</a
+    >
+  </li>
+  <li class="transform duration-200 transition-all hover:translate-x-4">
+    <a
+      href="#projects"
+      class="hover:text-jasper"
+      aria-label="Projects"
+      title="Projects">{projectsLabel}</a
+    >
+  </li>
+</ul>

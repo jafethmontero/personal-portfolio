@@ -1,0 +1,32 @@
+---
+import Header from "./Header.astro";
+import Navbar from "./Navbar.astro";
+import SocialSection from "./SocialSection.astro";
+
+const { job, description, aboutLabel, experienceLabel, projectsLabel } =
+  Astro.props;
+
+interface Props {
+  job: string;
+  description: string;
+  aboutLabel: string;
+  experienceLabel: string;
+  projectsLabel: string;
+}
+---
+
+<aside
+  class="h-auto w-full md:w-[40%] md:fixed md:h-[850px] flex flex-col justify-between"
+>
+  <div>
+    <Header job={job} description={description} />
+
+    <Navbar
+      aboutLabel={aboutLabel}
+      experienceLabel={experienceLabel}
+      projectsLabel={projectsLabel}
+    />
+  </div>
+
+  <SocialSection />
+</aside>
