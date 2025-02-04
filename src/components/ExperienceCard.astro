@@ -30,7 +30,7 @@ const { href, title, description, date, skills, companyName } = Astro.props;
   <div>
     <div class="flex gap-1 items-center">
       <h3
-        class="text-xl font-semibold text-white transition-colors group-hover:text-secondary duration-200"
+        class="text-base lg:text-xl font-semibold text-white transition-colors group-hover:text-secondary duration-200"
       >
         {title}
       </h3>
@@ -41,7 +41,7 @@ const { href, title, description, date, skills, companyName } = Astro.props;
 
     <span class="text-sm text-gray-300">{companyName}</span>
 
-    <p class="text-gray-400 max-w-2xl my-2">
+    <p class="text-gray-400 max-w-2xl my-2 text-sm lg:text-base">
       {description}
     </p>
 

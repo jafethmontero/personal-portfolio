@@ -8,9 +8,16 @@ interface Props {
 ---
 
 <header class="mb-6 md:mb-4">
-  <h1 class="text-4xl font-bold mb-2 text-gray-100">Jafeth Montero</h1>
-  <h2 class="text-xl text-jasper">{job}</h2>
-  <p class="mt-4 max-w-xs text-gray-200">
+  <div class="flex items-center mb-2">
+    <img
+      class="size-10 lg:size-14 rounded-full mr-2"
+      src="/images/profile-pic.webp"
+      alt="Jafeth Montero"
+    />
+    <h1 class="text-2xl lg:text-4xl font-bold text-gray-100">Jafeth Montero</h1>
+  </div>
+  <h2 class="text-lg lg:text-xl text-jasper mb-2 md:mb-4">{job}</h2>
+  <p class="max-w-xs text-gray-200 text-sm md:text-base">
     {description}
   </p>
 </header>
