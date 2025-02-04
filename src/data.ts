@@ -40,7 +40,7 @@ export const experiences: Experience[] = [
       es: "Como Ingeniero de Aseguramiento de Calidad Manual en Hermosa Software, contribuí significativamente al desarrollo de una aplicación web receptiva especializada en reservas de hoteles y espacios para eventos para Groups360.",
     },
     date: "Set 2020 - Set 2021",
-    href: "https://example.com",
+    href: "https://hermosasoftware.io",
     skills: ["Quality Assurance", "Manual Testing", "DevTools"],
     companyName: "Hermosa software",
   },
