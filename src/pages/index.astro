@@ -4,7 +4,9 @@ import AboutSection from "../components/AboutSection.astro";
 import MainWrapper from "../components/MainWrapper.astro";
 import ExperienceSection from "../components/ExperienceSection.astro";
 import ProjectsSection from "../components/ProjectsSection.astro";
+import Paragraph from "../components/Paragraph.astro";
 import Footer from "../components/Footer.astro";
+import HighlightedText from "../components/HighlightedText.astro";
 import { experiences, projects } from "../data";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -20,8 +22,8 @@ import Layout from "../layouts/Layout.astro";
 
   <MainWrapper>
     <AboutSection>
-      <p class="max-w-2xl mb-4">
-        <span class="text-white">As a Sr. Web Developer</span> at
+      <Paragraph className="mb-4">
+        <HighlightedText>As a Sr. Web Developer</HighlightedText> at
         <a
           class="text-jasper hover:text-secondary"
           href="https://gexpsoftware.com"
@@ -30,37 +32,39 @@ import Layout from "../layouts/Layout.astro";
           aria-label="Go to gexp software"
           title="Go to gexp software">gexp software,</a
         > I build
-        <span class="text-white">innovative digital solutions,</span> focusing on
-        <span class="text-white">custom products</span> that create seamless and
-        engaging user experiences using <span class="text-white"
-          >modern technologies.</span
+        <HighlightedText>innovative digital solutions,</HighlightedText> focusing
+        on
+        <HighlightedText>custom products</HighlightedText> that create seamless and
+        engaging user experiences using <HighlightedText
+          >modern technologies.</HighlightedText
         >
-      </p>
-      <p class="max-w-2xl mb-4">
-        I am a <span class="text-white">
-          passionate programming enthusiast</span
+      </Paragraph>
+      <Paragraph className="mb-4">
+        I am a <HighlightedText>
+          passionate programming enthusiast</HighlightedText
         > who focuses on mastering
-        <span class="text-white">JavaScript</span> and its ecosystem, including
-        <span class="text-white">React, Redux, Node.js, Next.js, and more.</span
-        > My skills allow me to design and build <span class="text-white"
-          >custom solutions</span
+        <HighlightedText>JavaScript</HighlightedText> and its ecosystem, including
+        <HighlightedText
+          >React, Redux, Node.js, Next.js, and more.</HighlightedText
+        > My skills allow me to design and build <HighlightedText
+          >custom solutions</HighlightedText
         > that meet client needs and exceed expectations.
-      </p>
-      <p class="mb-4">
-        I thrive in <span class="text-white">cross- functional teams,</span> where
-        I communicate and collaborate effectively using <span class="text-white"
-          >Agile and Scrum</span
+      </Paragraph>
+      <Paragraph className="mb-4">
+        I thrive in <HighlightedText>cross- functional teams,</HighlightedText> where
+        I communicate and collaborate effectively using <HighlightedText
+          >Agile and Scrum</HighlightedText
         > methodologies.
-      </p>
-      <p class="max-w-2xl">
-        Beyond coding, I find peace in <span class="text-white"
-          >nature, photography, travel, and time with loved ones.</span
-        > I also believe technology can <span class="text-white"
-          >drive positive change</span
-        >—I’m open to donating my work to <span class="text-white"
-          >charities supporting children, conservation, elderly care, and pets.</span
+      </Paragraph>
+      <Paragraph>
+        Beyond coding, I find peace in <HighlightedText
+          >nature, photography, travel, and time with loved ones.</HighlightedText
+        > I also believe technology can <HighlightedText
+          >drive positive change</HighlightedText
+        >—I’m open to donating my work to <HighlightedText
+          >charities supporting children, conservation, elderly care, and pets.</HighlightedText
         > Let’s create something impactful together!
-      </p>
+      </Paragraph>
     </AboutSection>
 
     <ExperienceSection

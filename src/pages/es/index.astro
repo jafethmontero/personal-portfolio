@@ -5,7 +5,9 @@ import AboutSection from "../../components/AboutSection.astro";
 import MainWrapper from "../../components/MainWrapper.astro";
 import ExperienceSection from "../../components/ExperienceSection.astro";
 import ProjectsSection from "../../components/ProjectsSection.astro";
+import Paragraph from "../../components/Paragraph.astro";
 import Footer from "../../components/Footer.astro";
+import HighlightedText from "../../components/HighlightedText.astro";
 import { experiences, projects } from "../../data";
 ---
 
@@ -20,8 +22,8 @@ import { experiences, projects } from "../../data";
 
   <MainWrapper>
     <AboutSection>
-      <p class="max-w-2xl mb-4">
-        <span class="text-white">Como Desarrollador Web Senior</span> en
+      <Paragraph className="mb-4">
+        <HighlightedText>Como Desarrollador Web Senior</HighlightedText> en
         <a
           class="text-jasper hover:text-secondary"
           href="https://gexpsoftware.com"
@@ -30,40 +32,41 @@ import { experiences, projects } from "../../data";
           aria-label="Go to gexp software"
           title="Go to gexp software">gexp software,</a
         > creo
-        <span class="text-white">soluciones digitales innovadoras,</span> enfocándome
+        <HighlightedText>soluciones digitales innovadoras,</HighlightedText> enfocándome
         en
-        <span class="text-white">productos personalizados</span> que ofrecen experiencias
-        de usuario fluidas y atractivas con <span class="text-white"
-          >tecnologías modernas..</span
+        <HighlightedText>productos personalizados</HighlightedText> que ofrecen experiencias
+        de usuario fluidas y atractivas con <HighlightedText
+          >tecnologías modernas..</HighlightedText
         >
-      </p>
-      <p class="max-w-2xl mb-4">
-        Soy un <span class="text-white"> apasionado de la programación,</span> especializado
-        en
-        <span class="text-white">JavaScript</span> y su ecosistema que incluye
-        <span class="text-white">React, Redux, Node.js, Next.js, y mas.</span> Mis
-        habilidades me permiten diseñar y desarrollar <span class="text-white"
-          >soluciones a la medida</span
+      </Paragraph>
+      <Paragraph className="mb-4">
+        Soy un <HighlightedText>
+          apasionado de la programación,</HighlightedText
+        > especializado en
+        <HighlightedText>JavaScript</HighlightedText> y su ecosistema que incluye
+        <HighlightedText>React, Redux, Node.js, Next.js, y mas.</HighlightedText
+        > Mis habilidades me permiten diseñar y desarrollar <HighlightedText
+          >soluciones a la medida</HighlightedText
         > que cumplen con las necesidades del cliente y superan sus expectativas.
-      </p>
-      <p class="mb-4">
-        Me desenvuelvo bien en <span class="text-white"
-          >equipos multidisciplinarios,</span
-        > colaborando de manera efectiva y siguiendo metodologías <span
-          class="text-white">Agile y Scrum</span
+      </Paragraph>
+      <Paragraph className="mb-4">
+        Me desenvuelvo bien en <HighlightedText
+          >equipos multidisciplinarios,</HighlightedText
+        > colaborando de manera efectiva y siguiendo metodologías <HighlightedText
+          class="text-white">Agile y Scrum</HighlightedText
         > para mantener los proyectos en marcha.
-      </p>
-      <p class="max-w-2xl">
-        Más allá del código, encuentro paz en <span class="text-white"
+      </Paragraph>
+      <Paragraph>
+        Más allá del código, encuentro paz en <HighlightedText
           >la naturaleza, la fotografía, los viajes y el tiempo con mis seres
-          queridos.</span
-        > También creo que la tecnología puede <span class="text-white"
-          >impulsar cambios positivos</span
-        >—estoy abierto a donar mi trabajo a <span class="text-white"
+          queridos.</HighlightedText
+        > También creo que la tecnología puede <HighlightedText
+          >impulsar cambios positivos</HighlightedText
+        >—estoy abierto a donar mi trabajo a <HighlightedText
           >organizaciones benéficas que apoyan a niños, conservación, cuidado de
-          personas mayores y rescate de animales.</span
+          personas mayores y rescate de animales.</HighlightedText
         > ¡Creemos algo impactante juntos!
-      </p>
+      </Paragraph>
     </AboutSection>
 
     <ExperienceSection
