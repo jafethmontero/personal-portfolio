@@ -77,13 +77,31 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    name: "Osa Nature Seeker - Tour Operator Website",
+    description: {
+      en: "A website for a tour operator in Costa Rica, showcasing their tours and services. Build with Astro and Tailwind CSS for styling.",
+      es: "Un sitio web para un operador turístico en Costa Rica, mostrando sus tours y servicios. Construido con Astro y Tailwind CSS para estilos.",
+    },
+    href: "https://osanatureseeker.com",
+    imageSrc: "/images/project4.webp",
+  },
+  {
+    name: "kyona Group - Corporate Website",
+    description: {
+      en: "A corporate website for a group of companies in Costa Rica, showcasing their services and projects. Build with Next.js and Tailwind CSS for styling.",
+      es: "Un sitio web corporativo para un grupo de empresas en Costa Rica, mostrando sus servicios y proyectos. Construido con Next.js y Tailwind CSS para estilos.",
+    },
+    href: "https://kyonagroup.com",
+    imageSrc: "/images/project3.webp",
+  },
+  {
     name: "Osa Aventura - Tour Operator Website",
     description: {
       en: "A website for a tour operator in Costa Rica, showcasing their tours and services. Build with Wordpress and deployed to Hostinger.",
       es: "Un sitio web para un operador turístico en Costa Rica, mostrando sus tours y servicios. Construido con Wordpress y desplegado en Hostinger.",
     },
     href: "https://osaaventura.com",
-    imageSrc: "/images/project4.webp",
+    imageSrc: "/images/project2.webp",
   },
   {
     name: "Corcovado Wild Tour - Tour operator website",
@@ -93,23 +111,5 @@ export const projects: Project[] = [
     },
     href: "https://corcovadowildtour.com",
     imageSrc: "/images/project1.webp",
-  },
-  {
-    name: "Full Stack recipe website",
-    description: {
-      en: "Developed a full stack recipe website with user authentication and CRUD operations using React, Node.js, and MongoDB.",
-      es: "Desarrollé un sitio web de recetas full stack con autenticación de usuario y operaciones CRUD utilizando React, Node.js y MongoDB.",
-    },
-    href: "https://github.com/jafethmontero/Full-Stack-App",
-    imageSrc: "/images/project2.webp",
-  },
-  {
-    name: "React native Todo app",
-    description: {
-      en: "Developed a todo app using React Native with user authentication and CRUD operations using Firebase.",
-      es: "Desarrollé una aplicación de tareas pendientes utilizando React Native con autenticación de usuario y operaciones CRUD utilizando Firebase.",
-    },
-    href: "https://github.com/jafethmontero/TodoApp",
-    imageSrc: "/images/project2.webp",
   },
 ];
