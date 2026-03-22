@@ -77,10 +77,28 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    name: "Alma Tour - Tour Operator Website",
+    description: {
+      en: "Booking-focused website for a Costa Rican tour operator, featuring curated tour packages and an inquiry flow. Built with Astro and Tailwind CSS.",
+      es: "Sitio web enfocado en reservas para un operador turístico costarricense, con paquetes de tours curados y un flujo de consultas. Construido con Astro y Tailwind CSS.",
+    },
+    href: "https://alma-tour.com",
+    imageSrc: "/images/project6.webp",
+  },
+  {
+    name: "Corcovado Explorers - Tour Operator Website",
+    description: {
+      en: "Adventure tour website specializing in guided expeditions through Corcovado National Park. Built with Astro and Tailwind CSS.",
+      es: "Sitio web de tours de aventura especializado en expediciones guiadas por el Parque Nacional Corcovado. Construido con Astro y Tailwind CSS.",
+    },
+    href: "https://corcovadoexplorers.com",
+    imageSrc: "/images/project5.webp",
+  },
+  {
     name: "Osa Nature Seeker - Tour Operator Website",
     description: {
-      en: "A website for a tour operator in Costa Rica, showcasing their tours and services. Build with Astro and Tailwind CSS for styling.",
-      es: "Un sitio web para un operador turístico en Costa Rica, mostrando sus tours y servicios. Construido con Astro y Tailwind CSS para estilos.",
+      en: "Wildlife and nature tour website for the Osa Peninsula, highlighting biodiversity experiences and eco-friendly tours. Built with Astro and Tailwind CSS.",
+      es: "Sitio web de tours de naturaleza y vida silvestre para la Península de Osa, destacando experiencias de biodiversidad y tours ecológicos. Construido con Astro y Tailwind CSS.",
     },
     href: "https://osanatureseeker.com",
     imageSrc: "/images/project4.webp",
@@ -97,8 +115,8 @@ export const projects: Project[] = [
   {
     name: "Osa Aventura - Tour Operator Website",
     description: {
-      en: "A website for a tour operator in Costa Rica, showcasing their tours and services. Build with Wordpress and deployed to Hostinger.",
-      es: "Un sitio web para un operador turístico en Costa Rica, mostrando sus tours y servicios. Construido con Wordpress y desplegado en Hostinger.",
+      en: "Adventure tour website for the Osa Peninsula offering zip-lining, kayaking, and jungle excursions. Built with WordPress and deployed to Hostinger.",
+      es: "Sitio web de tours de aventura en la Península de Osa con tirolesas, kayak y excursiones a la selva. Construido con WordPress y desplegado en Hostinger.",
     },
     href: "https://osaaventura.com",
     imageSrc: "/images/project2.webp",
@@ -106,8 +124,8 @@ export const projects: Project[] = [
   {
     name: "Corcovado Wild Tour - Tour operator website",
     description: {
-      en: "A website for a tour operator in Costa Rica, showcasing their tours and services. Build with Astro, React for dinamic content and Tailwind CSS for styling.",
-      es: "Un sitio web para un operador turístico en Costa Rica, mostrando sus tours y servicios. Construido con Astro, React para contenido dinámico y Tailwind CSS para estilos.",
+      en: "Wildlife-focused tour website for Corcovado, featuring dynamic tour listings and real-time availability. Built with Astro, React for interactive content, and Tailwind CSS.",
+      es: "Sitio web de tours de vida silvestre en Corcovado con listados dinámicos y disponibilidad en tiempo real. Construido con Astro, React para contenido interactivo y Tailwind CSS.",
     },
     href: "https://corcovadowildtour.com",
     imageSrc: "/images/project1.webp",
